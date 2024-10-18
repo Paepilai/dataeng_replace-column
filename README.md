@@ -1,17 +1,32 @@
-I try to do the project as a structure
+# Replace Column Project
 
-แบ่งการดูเป็น category, type a เอาจาก column 1 ตั้งแต่อันที่สองของ type a,
-type b ก็เอาจาก column 1 ตั้งแต่อันที่สองของ type b
+## Environment Setup
 
-ดังนั้น A,X เลยหายไป เพราะเป็นตัวแรกของแต่ละไทป์
+### 1. Select Python Interpreter
 
-- Describe thought process/logic/aspects
-- Provide more solutions
-- Project Structure
-- Found Problems
-- Suggests from AI
+To ensure compatibility with the project, please select Python 3.x as your interpreter. This can typically be done in your IDE (e.g., VSCode) by navigating to the interpreter settings and selecting the appropriate version from the list.
 
----
+On VSCode, use ctrl+shift+P to select Python Interpreter.
+
+```cmd
+pip install -r requirements.txt
+```
+
+### 2. Install Required Packages
+
+Before running the project, make sure to install the necessary packages. You can do this by executing the following command in your terminal or command prompt:
+
+To run the requirements, use the following command:
+
+```cmd
+pip install -r requirements.txt
+```
+
+To run the scripts, use the IDE's run functionality or use the following command:
+
+```cmd
+python .\scripts\replace_column_values.py
+```
 
 ## My Thought Process
 
@@ -43,9 +58,9 @@ I broke down the problem into the following implementation steps:
 
 1. **Create the DataFrame**
    First, I created a sample DataFrame that reflects the structure of the input data that contains three key-value pairs. Each key represents a column name, and the associated value is a list of entries for that column.
-    - Column 1 contains letters that serve as identifiers.
-    - Column 2 contains associated letters that will be modified.
-    - Column 3 categorizes the data into two types: Type A and Type B
+   - Column 1 contains letters that serve as identifiers.
+   - Column 2 contains associated letters that will be modified.
+   - Column 3 categorizes the data into two types: Type A and Type B
 2. **Iterate over categories**
    Using Pandas, I looped over the unique values in **Column 3** to process each category separately.
 3. **Replace the values in Column 2**
@@ -60,3 +75,28 @@ Finally, I refactored the code into a function to make it reusable and structure
 ### Step 6: **Test the Solution**
 
 I tested the solution with the provided sample data to ensure it met the requirements. I also considered edge cases, such as categories with only one row, to make sure the function handled those cases appropriately.
+
+## Testing
+
+This project includes unit tests to ensure the reliability of the `replace_column_values` function. The tests are located in the `tests/` directory and utilize the `unittest` framework. The testing process involves:
+
+1. **Setup**: A sample DataFrame is created to serve as input for testing.
+2. **Execution**: The `replace_column_values` function is called with the test DataFrame.
+3. **Validation**: The output is compared against an expected DataFrame to verify correctness.
+
+To run the tests, use the IDE's run functionality or use the following command:
+
+```cmd
+python .\tests\test_replace_column_values.py
+or
+python -m unittest .\tests\test_replace_column_values.py
+
+```
+
+## Visualization
+
+To run the visualizations, use the IDE's run functionality or use the following command:
+
+```cmd
+python .\visualizations\visual_replace_column_values.py
+```
