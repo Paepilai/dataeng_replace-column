@@ -16,6 +16,7 @@ To run the requirements, use the following command:
 
 ```cmd
 pip install -r requirements.txt
+```
 
 To run the scripts, use the IDE's run functionality or use the following command:
 
