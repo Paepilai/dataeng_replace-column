@@ -68,10 +68,6 @@ I broke down the problem into the following implementation steps:
 
 Finally, I refactored the code into a function to make it reusable and structured. I also made sure the solution avoided chained assignments (which can cause performance issues or warnings in Pandas) by using `.loc[]` for direct manipulation of the DataFrame.
 
-### Step 6: **Test the Solution**
-
-I tested the solution with the provided sample data to ensure it met the requirements. I also considered edge cases, such as categories with only one row, to make sure the function handled those cases appropriately.
-
 ## Testing
 
 This project includes unit tests to ensure the reliability of the `replace_column_values` function. The tests are located in the `tests/` directory and utilize the `unittest` framework. The testing process involves:
