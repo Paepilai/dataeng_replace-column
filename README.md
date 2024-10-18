@@ -8,10 +8,6 @@ To ensure compatibility with the project, please select Python 3.x as your inter
 
 On VSCode, use ctrl+shift+P to select Python Interpreter.
 
-```cmd
-pip install -r requirements.txt
-```
-
 ### 2. Install Required Packages
 
 Before running the project, make sure to install the necessary packages. You can do this by executing the following command in your terminal or command prompt:
@@ -20,7 +16,6 @@ To run the requirements, use the following command:
 
 ```cmd
 pip install -r requirements.txt
-```
 
 To run the scripts, use the IDE's run functionality or use the following command:
 
