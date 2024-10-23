@@ -48,7 +48,7 @@ Once the requirements were clear, I planned how to implement the solution
 
 I decided to use the Pandas library which is a data manipulation and analysis tool in Python to handle the DataFrame manipulations, as it provides powerful capabilities for vectorized operations, grouping, and conditional indexing. It is commonly used for working with structured data in the form of DataFrames, which are two-dimensional and size-mutable.
 
-### Step 4: **Implement the Solution**
+### 4. **Implement the Solution**
 
 I broke down the problem into the following implementation steps:
 
@@ -64,7 +64,7 @@ I broke down the problem into the following implementation steps:
 4. **Handle edge cases**
    I ensured that categories with only one entry are not modified, since there is no second value to shift.
 
-### Step 5: **Refine the Code**
+### 5. **Refine the Code**
 
 Finally, I refactored the code into a function to make it reusable and structured. I also made sure the solution avoided chained assignments (which can cause performance issues or warnings in Pandas) by using `.loc[]` for direct manipulation of the DataFrame.
 
